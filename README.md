@@ -1,1 +1,1 @@
-# Pop-quiz-fundamentals-of-javascript
+Fundamentals-Of-Javascript-Pop-Quiz
