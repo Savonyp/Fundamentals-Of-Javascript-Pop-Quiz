@@ -1,1 +1,1 @@
-# Pop-quiz-APIs
+# Pop-quiz-fundamentals-of-javascript
