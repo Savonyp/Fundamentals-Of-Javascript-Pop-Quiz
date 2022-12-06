@@ -1,16 +1,48 @@
-Var questionNumber = 0;
+var questions = 0;
 
 var score = 0;
 
 var generateBtn = document.querySelector("#generate");
 
 function generateQuestion () {
-    if startQuiz button is clicked
-    start_btn.onclick = ()=>{
+    // if startQuiz button is clicked
+    start_btn.onclick = ()=>{}
+}
+function beginQuiz() {
+    /*Show questions after we click the button
+  Create a timer to start the clock when start quiz button is clicked*/
+  var x = setInterval(function() {
+
+    // Time calculations for minutes and seconds
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+    // Display the result in the element 
+    document.getElementById("time").innerHTML = minutes + "m " + seconds + "s ";
+  
+    // If the count down is finished, write some text
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+   
+}
+ 
+// Use Array Index to navigate between questions
+    const question= [question1, question2, question3, question4, question5]
+    let txt = questions.forEach(answerSolved);
+    function questions(answer, options, questions) {
 }
 
+// Click button for start quiz
+generateBtn.onclick = function() {
+
+  console.log("starting quiz");
+}
 //start quiz
-var questions = {
+var questions = [
+  {
     number: 1,
     question: "What function is used to generate output to the console",
     answer: "console.log();",
@@ -62,4 +94,6 @@ var questions = {
       "In JS the 'this' keyword refers to the object it belongs to."
     ]
   },
+
+]
 
